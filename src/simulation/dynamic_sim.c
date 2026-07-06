@@ -51,11 +51,15 @@ void on_draw_dynamic(
         {
             double px = particle_collection->particles[i]->position.x;
             double py = particle_collection->particles[i]->position.y;
-            double fx = particle_collection->particles[i]->force_resultant.x;
-            double fy = particle_collection->particles[i]->force_resultant.y;
+            double vxi = particle_collection->particles[i]->velocity_i.x;
+            double vyi = particle_collection->particles[i]->velocity_i.y;
+            double ax = particle_collection->particles[i]->acceleration.x;
+            double ay = particle_collection->particles[i]->acceleration.y;
+            double vx = phyc_velocity(vxi, ax, sim->last_time);
+            double vy = phyc_velocity(vyi, ay, sim->last_time);
 
-            double pts_x[2] = {px, px + fx};
-            double pts_y[2] = {py, py + fy};
+            double pts_x[2] = {px, px + vx};
+            double pts_y[2] = {py, py + vy};
 
             for (int j = 0; j < 2; j++)
             {
