@@ -9,7 +9,7 @@ Variables variables_new()
     variables->simulation.first_time = TRUE;
     variables->simulation.gravity = 9.80;
     variables->simulation.time = 10.0;
-    variables->simulation.time_step = 0.01;
+    variables->simulation.time_step = 1.0;
     variables->simulation.frames = 60.0;
     return variables;
 }
@@ -52,7 +52,7 @@ void variables_simulation_wipe(Variables_Simulation variables_simulation)
     variables_simulation->first_time = TRUE;
     variables_simulation->gravity = 9.80;
     variables_simulation->time = 10.0;
-    variables_simulation->time_step = 0.01;
+    variables_simulation->time_step = 1.0;
     variables_simulation->frames = 60.0;
     variables_simulation->camera_initialized = FALSE;
 }
