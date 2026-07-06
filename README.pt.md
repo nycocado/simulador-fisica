@@ -33,6 +33,15 @@ Simulador de partículas com dois modos independentes. No modo cinemático as pa
 - **Exportação de dados**: Guarda automaticamente registos detalhados da simulação em ficheiros CSV, contendo posições, velocidades e forças a cada instante.
 - **Projetos**: Guarde e carregue as simulações através de ficheiros de projeto `.sabino`.
 
+## Capturas de ecrã
+
+<table>
+<tr>
+<td width="50%" valign="top"><img src="media/screenshots/kinematics-01.png" width="100%"><br>Simulação cinemática</td>
+<td width="50%" valign="top"><img src="media/screenshots/dynamics-02.png" width="100%"><br>Simulação dinâmica</td>
+</tr>
+</table>
+
 ## Multimédia
 
 - [Capturas de ecrã](media/screenshots)

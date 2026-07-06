@@ -33,6 +33,15 @@ Particle simulator with two independent modes. In kinematic mode particles follo
 - **Data export**: Automatically saves detailed simulation logs to CSV files containing positions, velocities, and forces for each particle over time.
 - **Project management**: Save and load simulation states as `.sabino` project files.
 
+## Screenshots
+
+<table>
+<tr>
+<td width="50%" valign="top"><img src="media/screenshots/kinematics-01.png" width="100%"><br>Kinematic simulation</td>
+<td width="50%" valign="top"><img src="media/screenshots/dynamics-02.png" width="100%"><br>Dynamic simulation</td>
+</tr>
+</table>
+
 ## Media
 
 - [Screenshots](media/screenshots)
